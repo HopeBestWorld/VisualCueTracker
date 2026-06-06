@@ -20,7 +20,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "baseUrl": "/VisualCueTracker"
+      "baseUrl": "/VisualCueTracker",
+      "router": {
+        "baseUrl": "/VisualCueTracker"
+      }
     }
   }
 }
