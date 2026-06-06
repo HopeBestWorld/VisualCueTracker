@@ -24,7 +24,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "predeploy": "npx expo export",
-    "deploy": "touch dist/.nojekyll && gh-pages -d dist -t true"
+    "deploy": "touch dist/.nojekyll && gh-pages -d dist -t"
   },
   "private": true
 }
