@@ -38,7 +38,7 @@ jobs:
 
             - name: Fix Metro absolute paths for GitHub Pages
               run: |
-                  sed -i 's|"/_expo/|"./_expo/|g' dist/index.html
+                  find dist -name "*.js" -o -name "*.html" -o -name "*.css" | xargs sed -i 's|"/_expo/|"./_expo/|g'
                   sed -i 's|"/favicon.ico|"./favicon.ico|g' dist/index.html
 
             - name: Add .nojekyll to prevent GitHub Pages from ignoring hidden files
