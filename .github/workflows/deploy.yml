@@ -35,6 +35,8 @@ jobs:
 
             - name: Build Expo web project
               run: npx expo export
+              env:
+                  EXPO_BASE_URL: /VisualCueTracker
 
             - name: Add .nojekyll to prevent GitHub Pages from ignoring hidden files
               run: touch dist/.nojekyll
