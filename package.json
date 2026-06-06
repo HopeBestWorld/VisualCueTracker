@@ -23,8 +23,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "predeploy": "npx expo export",
-    "deploy": "touch dist/.nojekyll && gh-pages -d dist -t"
+    "build": "npx expo export --output-dir docs && touch docs/.nojekyll"
   },
   "private": true
 }
