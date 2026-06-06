@@ -34,7 +34,7 @@ jobs:
               run: npm install
 
             - name: Build Expo web project
-              run: npx expo export --no-static
+              run: npx expo export --platform web
 
             - name: Fix Metro absolute paths for GitHub Pages
               run: |
